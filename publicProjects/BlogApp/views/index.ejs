@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs")  %>
+<style>
+    body {
+        background-color: #ececec;
+    }
+</style>
+
+<main class="main-body container">
+
+    <!-- <h1 class="container bg-white p-4 mt-5">Currently browsing: <%= %></h1> -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <% posts.forEach(post => { %>
+                <div class="col-lg-4 mb-4"> 
+                    <div class="card manual-card"> 
+                        <div class="card-body">
+                            <h5 class="card-title"><%= post.title %></h5>
+                            <p class="card-text"><%= post.text %></p>
+                            <div class="btn-group m-2" style="position: absolute; bottom: 0; left: 0;">
+                                <a href="/post/<%= post.id %>" class="btn btn-primary">Read More</a>
+    
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropend</span>
+                                </button>
+                           
+                                <ul class="dropdown-menu">
+                                    <form action="/delete-post" method="post">
+                                      <input class="dropdown-item" type="hidden" name="id" value="<%= post.id %>">
+                                      <button type="submit" class="dropdown-item" id="deletePost"  >DELETE</button>
+                                    </form>
+                                    <a class="dropdown-item" href="/edit-product/<%= post.id %>">EDIT</a>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</main>
+
+
+<%- include("partials/footer.ejs")  %>

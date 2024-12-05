@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs")  %>
+<style>
+    body {
+        background-color: #ececec;
+    }
+   
+
+</style>
+
+<main class="main-body container text-center ">
+   
+
+<p class="text-end">BLOD ID: <%= postId%></p>
+<div class="container" style="max-width: 1000px; height: 70vh; overflow: auto;">
+    <h1 class="card-title"><%= title %></h1>
+    <p class="card-text mt-5" style="word-wrap: break-word;"><%= content %></p>
+</div>
+</main>
+
+
+<%- include("partials/footer.ejs")  %>

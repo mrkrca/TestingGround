@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs")  %>
+<style>
+    body {
+        background-color: #ececec;
+    }
+</style>
+
+<main class="main-body container">
+    <div class="row justify-content-center pt-5">
+        <div class="col-md-6">
+            <div class="holder-dashboard">
+               <h2> <%= edit ? "Edit product" : "Add product" %></h2>
+               <form class="container" action="<%= edit ? '/edit-product/' + (post ? post.id : '') : '/' %>" method="POST">
+                <% if (edit && post) { %>
+                    <input type="hidden" name="postId" value="<%= postId %>"/>
+                <% } %>
+            
+                <div class="mb-3">
+                    <label for="title" class="form-label">Enter the title:</label>
+                    <input type="text" name="title" class="form-control" value="<%= edit && post ? post.title : '' %>">
+                </div>
+            
+                <div class="mb-3">
+                    <label for="text" class="form-label">Write the blog:</label>
+                    <textarea name="text" class="form-control"><%= edit && post ? post.text : '' %></textarea>
+                </div>
+            
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<%- include("partials/footer.ejs")  %>

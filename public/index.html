@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleksa Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.0/examples/album/album.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  
+  <style>
+    /* Custom CSS */
+    .center-div {
+      text-align: center; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      max-width: 600px; 
+      width: 100%; /* Set width to 100% */
+      height: 70vh; 
+      margin-right: auto; 
+      margin-left: auto;
+      padding-right: 15px; 
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- START OF THE HEADER-->
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">I'm Aleksa Djuric, pursuing Programming & Software Engineering at Pan-European University. My passion lies in front-end development, cyber security, and system administration. Seeking hands-on experience through upcoming internships.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/aleksa-%C4%91uri%C4%87-689600259/" target="_blank" class="text-white">LinkedIn</a></li>
+            <li><a href="https://github.com/mrkrca" target="_blank" class="text-white">Github</a></li>
+            <li><a href="https://drive.google.com/file/d/1U76Bsvt74iQMN9NQTbhlkxIZSRzFsilr/view?usp=sharing" target="_blank" class="text-white">CV</a></li>
+            <li><a onclick="goBottom()" href="#" class="text-white">Email me</a></li>
+
+            <script>
+
+              function goBottom() {
+              const bottomPosition = document.documentElement.scrollHeight - window.innerHeight;
+              window.scrollTo({
+                top: bottomPosition,
+                behavior: 'smooth'
+              });
+            }
+
+            </script>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>Aleksa</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- END OF THE HEADER-->
+
+<main>
+
+  <div class="container">
+    <div class="center-div">
+      <h1 class="display-3 font-weight-bold">ALEKSA</h1>
+      <p class="lead textSizeP1">Aleksa Djuric, Tech Enthusiast Open To Opportunities.
+    </p>
+      <p class="lead textSizeP font-weight-bold ">Recent Computer Science graduate with a keen interest in programming, algorithms, and software development. Although my professional experience is limited, I'm eager to enhance my skills and knowledge through practical opportunities. Ready to dive into entry-level positions, internships, or projects where I can learn, grow, and contribute effectively to the world of computer science.</p>
+    </div>
+  </div>
+
+  <div class="album py-5 mt-1 mb-1 ">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3  ">
+        <div class="col">
+          <a href="/publicProjects/DiceGame/" target="_blank" class="text-dark" style="text-decoration: none;" >
+            <div class="card shadow-sm h-100 ">
+              <img src="/images/DiceGameImg.png" alt="">
+              <div class="card-body ">
+                <p class="card-text" style="font-size: 13px;"> Created a dynamic dice project using JavaScript, HTML, and CSS to simulate dice rolls and explore interactive web development.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">HTML</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">CSS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col mt-1 mb-1">
+          <a href="/publicProjects/SimonGame/" target="_blank" class="text-dark" style="text-decoration: none;" >
+            <div class="card shadow-sm h-100">
+              <img src="/images/SimonGamePng.png" alt="">
+              <div class="card-body">
+                <p class="card-text" style="font-size: 13px;">I developed a digital version of the classic Simon game using JavaScript, HTML, and CSS, offering players a nostalgic yet interactive experience of memory and pattern recognition.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">HTML</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">CSS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col mt-1 mb-1">
+          <a href="#" target="_blank" class="text-dark" style="text-decoration: none;" >
+            <div class="card shadow-sm h-100">
+              <img src="/images/PortFooolioPng.png" alt="">
+              <div class="card-body ">
+                <p class="card-text" style="font-size: 13px;">This is a protoflio website made using bootstrap and HTML and some custom css.</p>
+                <div class="d-flex justify-content-between align-items-center ">
+                  <div class="btn-group ">
+                    <button type="button" class="btn btn-sm btn-outline-secondary ">JavaScript</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">HTML</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">CSS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-md-4 mt-1 mb-1">
+          <div class="card h-100">
+              <a href="/publicProjects/BlogApp/"  target="_blank" class="text-dark text-decoration-none">
+                  <img src="/images/Screenshot_12.png" class="card-img-top" alt="Portfolio Image">
+                  <div class="card-body">
+                      <p class="card-text mb-3" style="font-size: 14px;">This is a blog application for posting blogs. Able to post, edit and delete posts. If you want to check it out: https://github.com/mrkrca/BlogApp  </p>
+                      <div class="d-flex flex-wrap align-items-center">
+                          <div class="btn-group flex-wrap">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">JavaScript</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">HTML</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">CSS</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">EJS</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Node.js</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Express.js</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Bootstrap</button>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+      
+      <div class="col-md-4 mt-1 mb-1">
+        <div class="card h-100">
+            <a href="/publicProjects/calculator/"  target="_blank" class="text-dark text-decoration-none">
+                <img src="/images/calculator.png" class="card-img-top" alt="Portfolio Image">
+                <div class="card-body">
+                    <p class="card-text mb-3" style="font-size: 14px;">This is a blog application for posting blogs. Able to post, edit and delete posts. If you want to check it out: https://github.com/mrkrca/BlogApp  </p>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <div class="btn-group flex-wrap">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">JavaScript</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">HTML</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">CSS</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+   
+        <!-- ADD MORE CARD IF WANTED -->
+
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    
+
+    <form action="/submit" method="POST">
+  <div data-mdb-input-init class="form-outline mb-4">
+    <label class="form-label" for="name" >Name</label>
+    <input type="text" id="name" name="name" class="form-control" placeholder="Name..." />
+    
+  </div>
+
+  
+  <div data-mdb-input-init class="form-outline mb-4">
+    <label class="form-label" for="email">Email address</label>
+    <input type="email" id="email" name="email" class="form-control" placeholder="Email..." />
+    
+  </div>
+
+ 
+  <div data-mdb-input-init class="form-outline mb-4">
+    <label class="form-label" for="message">Message</label>
+    <textarea class="form-control" name="message" id="message" rows="4" placeholder="Message..."></textarea>
+    
+  </div>
+
+ 
+  <button data-mdb-ripple-init type="submit" onclick="deleteInput()" class="btn btn-primary btn-block mb-4">Send</button>
+</form>
+   
+ 
+    
+  </div>
+</footer>
+
+<script type="module" src="/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dotenv@10.0.0/dist/dotenv.js"></script>
+<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

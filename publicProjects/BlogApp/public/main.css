@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #dbdbdb;
+    
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+.main-body {
+    max-width: 1000px;
+    width: 100%;
+    height: 80vh;
+    font-family: "Inter", sans-serif;
+    overflow:auto;
+    
+}
+
+.card-body {
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+    white-space: wrap;
+    overflow: hidden;
+
+
+}
+.card-body:before {
+    content:'';
+    width:100%;
+    height:100%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:linear-gradient(transparent 50px, white);
+    
+  }
+
+  
